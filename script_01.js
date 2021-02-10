@@ -23,3 +23,20 @@ function ausgabeNamen()
 //ausgabeNamen();
 //console.log(firstName); // Fehler --> lokal
 
+/***** Funktionen 02b *****/
+// 2b. Parametrisierung + Datenübergabe von AUSSEN
+
+function ausgabeNamen(firstName) 
+{
+   if (firstName == undefined) {
+    firstName = "nobody";
+   }
+   
+    console.log("Hallo " + firstName + "!");
+}
+
+ausgabeNamen("Ahmad");  // Argument / ext. Daten
+ausgabeNamen("Jenny");
+ausgabeNamen(); // Fehler, keine Daten ....
+ausgabeNamen(prompt("Bitte Namen eingeben!"));
+
