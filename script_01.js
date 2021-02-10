@@ -69,4 +69,22 @@ function ausgabeNamenParams2(firstName,familyName)
     console.log(outputStr);
 }
 
-ausgabeNamenParams2("Drazen","Savi");
+//ausgabeNamenParams2("Drazen","Savi");
+
+/***** Funktionen 03b *****/
+ausgabe(getString("Drazen","Savi")); // Test
+function getString(firstName,familyName) 
+{
+    let gap = " ";
+    let outputStr = "Hallo" + gap + firstName + gap + familyName + "!";
+    return outputStr;  // Verbindung zum Call!!!
+}
+
+
+/** 2. Job: Ausgabe */
+//ausgabe("hi"); // Unit-Test | TDD
+function ausgabe(outputStr) 
+{
+    console.log(outputStr);
+}
+
