@@ -35,8 +35,21 @@ function ausgabeNamen(firstName)
     console.log("Hallo " + firstName + "!");
 }
 
+/*
 ausgabeNamen("Ahmad");  // Argument / ext. Daten
 ausgabeNamen("Jenny");
 ausgabeNamen(); // Fehler, keine Daten ....
 ausgabeNamen(prompt("Bitte Namen eingeben!"));
+*/
 
+/***** Funktionen 02c *****/
+// 2c. Mehrere Parameter
+
+function ausgabeNamenParams(firstName,familyName) 
+{
+    console.log("Hallo " + firstName + " " + familyName + "!");
+}
+
+// ausgabeNamenParams("Drazen","Savi");
+// ausgabeNamenParams("Savi","Drazen");
+// ausgabeNamenParams(prompt("Vorname?"), prompt("Name?"));
